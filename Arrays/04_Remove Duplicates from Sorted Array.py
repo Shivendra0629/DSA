@@ -123,7 +123,7 @@ obj=Solution()
 print(obj.duplicate([0,1,1,2,2,3,3,4,5]))
 print(obj.duplicate([1,1,2,2,2,3,3]))
 print(obj.duplicate([1,1,1,1]))
-print(obj.duplicate([1,2,3,4,5]))
+print(obj.duplicate([1,2,2,3,4,5]))
 
 '''
 --------------------------------------------------------

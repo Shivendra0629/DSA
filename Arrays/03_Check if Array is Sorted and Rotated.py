@@ -143,7 +143,7 @@ class Solution:
 obj = Solution()
 
 print(obj.check([3, 4, 5, 1, 2]))  
-print(obj.check([2, 1, 3, 4]))      
+print(obj.check([2, 1, 4, 3, 4]))      
 print(obj.check([1, 2, 3]))         
 print(obj.check([1, 1, 1]))         
 print(obj.check([4, 5, 1, 2, 3]))   
