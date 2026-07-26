@@ -139,7 +139,7 @@ class Solution:
         return largest,slargest
 obj=Solution()
 print(obj.secondlargest([30,60,90,10,50]))
-print(obj.secondlargest([1,60,90,100,18]))
+print(obj.secondlargest([1,66,90,100,18]))
 print(obj.secondlargest([7,9,-6,10,40]))
 print(obj.secondlargest([8,3,-4,-5]))
 print(obj.secondlargest([8, 3, 7]))
