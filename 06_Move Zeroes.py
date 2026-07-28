@@ -64,34 +64,49 @@ print(object.moveZeroes([1,5,0,6,5,0]))
 '''
 --------------------------------------------------------
 ANOTHER APPROACH (Using Extra Array)
+class Solution:
 
-non_zero = []
-zero_count = 0
+    def MoveZeroes(self, nums):
 
-for num in nums:
-    if num == 0:
-        zero_count += 1
-    else:
-        non_zero.append(num)
+        n = len(nums)
 
-nums[:] = non_zero + [0] * zero_count
+        for i in range(n):
 
-Time Complexity:
-O(n)
+            for j in range(n-1):
 
-Space Complexity:
-O(n)
+                if nums[j] == 0:
 
-Reason:
-Uses an extra array.
+                    nums[j], nums[j+1] = nums[j+1], nums[j]
 
+        return nums
 --------------------------------------------------------
 TIME COMPLEXITY:
 
+Outer loop:
+
+Runs n times.
+
 O(n)
 
-Reason:
-The array is traversed only once.
+Inner loop:
+
+Runs (n - 1) times for every iteration of the outer loop.
+
+O(n - 1)
+
+Total Time Complexity:
+
+O(n) × O(n - 1)
+
+= O(n² - n)
+
+In Big-O notation, we ignore lower-order terms.
+
+Therefore,
+
+Time Complexity:
+
+O(n²)
 
 --------------------------------------------------------
 SPACE COMPLEXITY:
@@ -99,9 +114,31 @@ SPACE COMPLEXITY:
 O(1)
 
 Reason:
-Only two pointers (i and j) are used.
+
+No extra array or data structure is created.
+
+Only swapping is performed using the existing array.
 
 --------------------------------------------------------
+WHY IS THIS NOT AN OPTIMAL APPROACH?
+
+1. The array is traversed multiple times.
+
+2. Even after a zero reaches the end,
+   the algorithm continues checking and swapping.
+
+3. Many unnecessary comparisons and swaps are performed.
+
+4. The same elements may be visited repeatedly.
+
+Hence, the algorithm takes O(n²) time,
+which is inefficient for large input sizes.
+
+A Two Pointer approach solves the same problem
+in O(n) time and O(1) extra space.
+
+--------------------------------------------------------
+
 EDGE CASES:
 
 1. Single element.
