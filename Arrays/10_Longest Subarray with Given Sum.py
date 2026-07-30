@@ -97,7 +97,7 @@ class Solution:
 
         return max_length
 obj=Solution()
-print(obj.longestSubarray([1,2,3,4,5,1,6,4],10))
+print(obj.longestSubarray([1,2,3,4,5,1,6,4,10],10))
 '''
 --------------------------------------------------------
 TIME COMPLEXITY:

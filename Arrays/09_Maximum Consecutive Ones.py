@@ -115,7 +115,9 @@ class Solution:
 obj = Solution()
 
 print(obj.maxCon([1,1,0,1,1,1,1,0,1,1,1]))
-
+print(obj.maxCon([1,1,0,1,1,1]))
+print(obj.maxCon([1,1,1,1,1,0,1,1,1,1,0,1,1,1]))
+print(obj.maxCon([1,1,0,1,1,1,1,0,1,1]))
 '''
 --------------------------------------------------------
 TIME COMPLEXITY:
