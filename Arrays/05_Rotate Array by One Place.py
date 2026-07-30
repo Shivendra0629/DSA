@@ -383,7 +383,7 @@ obj=Solution()
 
 print(obj.rotate([1,2,3,4,5,6,7],3)) 
 print(obj.rotate([3,5,12,6,7,3,5],2)) 
-print(obj.rotate([-99,64,22,35],4))
+print(obj.rotate([-99,64,22,3,5],4))
 print(obj.rotate([8,66,42,1,2,3,6,7,],1))
 
 '''

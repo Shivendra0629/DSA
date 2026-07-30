@@ -60,7 +60,6 @@ print(object.moveZeroes([0,0,2,30,0]))
 print(object.moveZeroes([0,1,0,3,12]))
 print(object.moveZeroes([1,5,0,6,5,0]))
 
-
 '''
 --------------------------------------------------------
 ANOTHER APPROACH (Using Extra Array)
