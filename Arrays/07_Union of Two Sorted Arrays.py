@@ -130,7 +130,7 @@ class Solution:
         return nums3
 
 obj = Solution()
-print(obj.Union([1,2,3,4], [2,3,4,5]))
+print(obj.Union([1,2,3,4,6], [2,3,4,5]))
 
 '''
 --------------------------------------------------------

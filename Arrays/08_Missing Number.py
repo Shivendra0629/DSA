@@ -163,6 +163,8 @@ class Solution:
                 return i
 
         return len(nums)
+obj=Solution()
+print(obj.missingNumber([1,0,2,0,2,3]))
 '''
 --------------------------------------------------------
 TIME COMPLEXITY:
