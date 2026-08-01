@@ -239,7 +239,7 @@ obj = Solution()
 
 print(obj.SingleNum([1,2,1,2,3]))
 print(obj.SingleNum([4,1,2,1,2]))
-print(obj.SingleNum([2,2,1]))
+print(obj.SingleNum([2,2,1,3]))
 print(obj.SingleNum([5]))
 print(obj.SingleNum([-1,-1,-5]))
 
